@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordering Page</title>
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+  <div class="order-form">
+    <h2>Order Form</h2>
+
+    <form>
+      <div class="form-group">
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+          <option value="">Select a category</option>
+          <option value="beverages">Beverages</option>
+          <option value="Fast_food">Fast Food</option>
+          <option value="Lunch">Lunch</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="product">Product:</label>
+        <select id="product" name="product">
+          <option value="">Select a product</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1">
+      </div>
+      <div class="form-group">
+        <button type="submit" id="order-button">
+          <img src="" alt="Order Photo" class="order-photo">
+          Order Now
+        </button>
+      </div>
+    </form>
+  </div>
+  <script src="order.js"></script>
+</body>
+</html>
